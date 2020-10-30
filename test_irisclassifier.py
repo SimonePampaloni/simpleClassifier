@@ -2,7 +2,7 @@ from typing import Set
 import irisclassifier
 import pytest
 
-performance_threshoulds = {0.50, 0.75, 0.95}
+performance_threshoulds = {0.50, 0.75, 0.90}
 
 @pytest.mark.parametrize('th', performance_threshoulds)
 def test_evaluation(th):
